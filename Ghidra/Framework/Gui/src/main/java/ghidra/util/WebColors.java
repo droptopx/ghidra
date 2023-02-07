@@ -267,8 +267,8 @@ public abstract class WebColors {
 	 * @return a color for the given string or null
 	 */
 	public static Color getColor(String colorString) {
-		String value = colorString.trim().toLowerCase(Locale.ENGLISH);
-		Color color = nameToColorMap.get(value.toLowerCase(Locale.ENGLISH)); // Locale not necessary, but nice to have
+		String value = colorString.trim().toLowerCase(Locale.ROOT);
+		Color color = nameToColorMap.get(value.toLowerCase(Locale.ROOT)); // Locale not necessary, but nice to have
 		if (color != null) {
 			return color;
 		}
